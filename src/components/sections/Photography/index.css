@@ -21,3 +21,17 @@
   font-weight: 600;
   align-self: center;
 }
+
+@media (max-width: 850px) {
+  .photo-section {
+    flex-direction: column;
+  }
+
+  .photo-section .image-gallery {
+    border-radius: 7%;
+    overflow: hidden;
+    background: black;
+    width: auto;
+    height: 220px;
+  }
+}

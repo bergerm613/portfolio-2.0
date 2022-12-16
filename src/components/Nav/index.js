@@ -50,40 +50,42 @@ export const Nav = () => {
       </nav>
 
       {/* MOBILE */}
-      {/* <nav className="mobile-view">
+      <nav className="mobile-view">
         <img
           src={logo}
           alt="Michelle Berger - software developer"
           className="title"
         />
-        <a
-          href="https://www.linkedin.com/in/michelle-berger-46aa5818b"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={linkedin} alt="linkedin" height="40px" />
-        </a>
+        <div className="mobile-icons">
+          <a
+            href="https://www.linkedin.com/in/michelle-berger-46aa5818b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin} alt="linkedin" height="40px" />
+          </a>
 
-        <a
-          href="https://github.com/bergerm613"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={github} alt="github" height="40px" />
-        </a>
+          <a
+            href="https://github.com/bergerm613"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={github} alt="github" height="40px" />
+          </a>
 
-        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
-          <img src={resume} alt="resume" height="40px" />
-        </a>
+          <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+            <img src={resume} alt="resume" height="40px" />
+          </a>
 
-        <a
-          href="mailto: bergerm613@gmail.com?subject=Hey, loved your website!"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={email} alt="email" height="40px" />
-        </a>
-      </nav> */}
+          <a
+            href="mailto: bergerm613@gmail.com?subject=Hey, loved your website!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={email} alt="email" height="40px" />
+          </a>
+        </div>
+      </nav>
     </>
   );
 };

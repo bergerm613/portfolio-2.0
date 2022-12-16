@@ -8,6 +8,10 @@ body {
   animation-fill-mode: forwards;
 }
 
+section {
+  margin: 0 12px;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

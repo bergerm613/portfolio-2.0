@@ -1,8 +1,13 @@
-nav {
+nav.desktop-view {
+  margin: 0 auto;
+  max-width: 2000px;
   padding: 32px;
 
   display: flex;
   justify-content: space-between;
+}
+nav.mobile-view {
+  display: none;
 }
 
 .title {
@@ -18,4 +23,26 @@ a:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+  nav.desktop-view {
+    display: none;
+  }
+  nav.mobile-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 200px;
+    padding-bottom: 18px;
+  }
+
+  .mobile-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
 }

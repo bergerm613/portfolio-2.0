@@ -1,6 +1,8 @@
 .intro-section h1 {
   font-size: 54px;
   padding: 54px 108px;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .me-pic {
@@ -30,4 +32,11 @@
 
 .me-pic:hover:after {
   background: radial-gradient(circle, transparent 30%, red 168%);
+}
+
+@media (max-width: 850px) {
+  .intro-section h1 {
+    font-size: 32px;
+    padding: 32px 18px;
+  }
 }
