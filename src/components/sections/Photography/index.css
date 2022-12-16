@@ -1,0 +1,23 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.photo-section {
+  display: flex;
+  padding: 18px;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.photo-section .image-gallery {
+  border-radius: 7%;
+  overflow: hidden;
+  background: black;
+  width: 50%;
+  height: 650px;
+}
+
+.blurb {
+  max-width: 500px;
+  font-size: 38px;
+  font-weight: 600;
+  align-self: center;
+}

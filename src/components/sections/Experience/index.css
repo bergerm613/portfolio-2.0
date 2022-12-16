@@ -1,0 +1,62 @@
+.experience-section {
+  padding-top: 82px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+  margin-bottom: 115px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.company-logo {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.experience-info {
+  max-width: 576px;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 64px;
+  margin: 28px 0;
+  line-height: 44px;
+}
+
+.hover {
+  --b: 0.1em; /* the thickness of the line */
+  --a: #faa275; /* the origional color */
+  --c: #fb722b; /* the new color */
+
+  color: var(--a);
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, var(--a)) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+.hover:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+}
+
+p {
+  font-size: 18px;
+  font-family: "K2D";
+  margin: 0;
+}

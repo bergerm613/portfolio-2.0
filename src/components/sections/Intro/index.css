@@ -1,0 +1,33 @@
+.intro-section h1 {
+  font-size: 54px;
+  padding: 54px 108px;
+}
+
+.me-pic {
+  margin: auto;
+  margin-bottom: 82px;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  position: relative;
+  display: block;
+  background-image: url("./me.jpeg");
+  background-size: cover;
+}
+
+.me-pic:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(circle, transparent 100%, red 0%);
+  mix-blend-mode: difference;
+}
+
+.me-pic:hover:after {
+  background: radial-gradient(circle, transparent 30%, red 168%);
+}

@@ -1,0 +1,21 @@
+nav {
+  padding: 32px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 350px;
+}
+
+a {
+  transition: 0.4s;
+}
+a:hover {
+  filter: sepia(100%);
+
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
