@@ -12,7 +12,11 @@
   overflow: hidden;
   background: black;
   width: 50%;
-  height: 650px;
+  height: 600px;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: none;
 }
 
 .blurb {
@@ -22,7 +26,12 @@
   align-self: center;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1270px) {
+  .blurb {
+    max-width: none;
+    padding: 108px;
+  }
+
   .photo-section {
     flex-direction: column;
   }
@@ -32,6 +41,16 @@
     overflow: hidden;
     background: black;
     width: auto;
-    height: 220px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 740px) {
+  .blurb {
+    padding: 32px;
+  }
+
+  .photo-section .image-gallery {
+    height: 300px;
   }
 }
