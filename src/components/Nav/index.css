@@ -18,7 +18,7 @@ a {
   transition: 0.4s;
 }
 a:hover {
-  filter: sepia(100%);
+  filter: brightness(0.74) contrast(2.42) hue-rotate(-9deg);
 
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);

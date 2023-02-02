@@ -35,7 +35,7 @@ export const Cursor = ({ variant }) => {
       x: mousePosition.x - 40,
       y: mousePosition.y - 40,
       backgroundColor: "#faa275",
-      mixBlendMode: "difference",
+      mixBlendMode: "hard-light",
     },
   };
 
