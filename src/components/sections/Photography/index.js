@@ -38,12 +38,14 @@ export const PhotographySection = () => {
   return (
     <section className="photo-section">
       <span className="blurb">
-        Besides for coding, I also love guitar, traveling, photography, and
-        people.
-        <br />
-        <br />
-        Here's some smoke photography I've shot, cuz I think it looks cool
-        <br />ᵔ ᵕ ᵔ
+        <p className="blurb-title">
+          Besides for coding, I also love guitar, traveling, photography, and
+          people.
+        </p>
+        <p className="blurb-subtitle">
+          Here's some smoke photography I've shot, cuz I think it looks cool
+        </p>
+        ᵔ ᵕ ᵔ
       </span>
 
       <ImageGallery

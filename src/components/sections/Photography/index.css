@@ -20,10 +20,19 @@
 }
 
 .blurb {
-  max-width: 500px;
+  max-width: 485px;
+  align-self: center;
+}
+
+.blurb-title {
   font-size: 38px;
   font-weight: 600;
-  align-self: center;
+}
+
+.blurb-subtitle {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1270px) {
