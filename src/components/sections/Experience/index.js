@@ -1,10 +1,14 @@
-import "./index.css";
+import { useContext } from "react";
+
+import { CursorContext } from "../../../providers/CursorProvider";
 
 import evenLogo from "./companies/even.png";
 import gwcLogo from "./companies/gwc.png";
 import indicativeLogo from "./companies/indicative.png";
 import quartetLogo from "./companies/quartet.png";
 import rotationLogo from "./companies/rotation.png";
+
+import "./index.css";
 
 export const ExperienceSection = () => {
   return (
@@ -68,9 +72,17 @@ export const ExperienceSection = () => {
 };
 
 const Experience = ({ companyName, jobTitle, blurb, logo, link, years }) => {
+  const { setCursorVariant } = useContext(CursorContext);
+
   return (
     <div className="experience">
-      <a target="_blank" rel="noopener noreferrer" href={link}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={link}
+        onMouseEnter={() => setCursorVariant("pointer")}
+        onMouseLeave={() => setCursorVariant("default")}
+      >
         <img src={logo} alt={companyName} className="company-logo" />
       </a>
 

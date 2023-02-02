@@ -3,11 +3,13 @@ import { IntroSection } from "./components/sections/Intro";
 import { PhotographySection } from "./components/sections/Photography";
 import { Nav } from "./components/Nav";
 
+import { CursorProvider } from "./providers/CursorProvider";
+
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <CursorProvider>
       <Nav />
 
       <IntroSection />
@@ -17,8 +19,8 @@ function App() {
       <hr />
 
       <PhotographySection />
-    </div>
+    </CursorProvider>
   );
-}
+};
 
 export default App;

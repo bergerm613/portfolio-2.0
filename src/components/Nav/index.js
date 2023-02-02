@@ -7,6 +7,8 @@ import github from "./assets/icons/github.svg";
 import resume from "./assets/icons/resume.svg";
 import email from "./assets/icons/email.svg";
 
+import { CursorLink } from "./CursorLink";
+
 import "./index.css";
 
 export const Nav = () => {
@@ -14,21 +16,15 @@ export const Nav = () => {
     <>
       {/* DESKTOP */}
       <nav className="desktop-view">
-        <a
-          href="https://www.linkedin.com/in/michelle-berger-46aa5818b"
-          target="_blank"
-          rel="noopener noreferrer"
+        <CursorLink
+          href={"https://www.linkedin.com/in/michelle-berger-46aa5818b"}
         >
           <img src={linkedin} alt="linkedin" height="40px" />
-        </a>
+        </CursorLink>
 
-        <a
-          href="https://github.com/bergerm613"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <CursorLink href={"https://github.com/bergerm613"}>
           <img src={github} alt="github" height="40px" />
-        </a>
+        </CursorLink>
 
         <img
           src={logo}
@@ -36,17 +32,15 @@ export const Nav = () => {
           className="title"
         />
 
-        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+        <CursorLink href={resumePDF}>
           <img src={resume} alt="resume" height="40px" />
-        </a>
+        </CursorLink>
 
-        <a
-          href="mailto: bergerm613@gmail.com?subject=Hey, loved your website!"
-          target="_blank"
-          rel="noopener noreferrer"
+        <CursorLink
+          href={"mailto: bergerm613@gmail.com?subject=Hey, loved your website!"}
         >
           <img src={email} alt="email" height="40px" />
-        </a>
+        </CursorLink>
       </nav>
 
       {/* MOBILE */}
