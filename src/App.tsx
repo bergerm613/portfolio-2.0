@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ExperienceSection } from "./components/sections/Experience";
 import { IntroSection } from "./components/sections/Intro";
 import { PhotographySection } from "./components/sections/Photography";

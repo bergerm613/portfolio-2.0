@@ -1,7 +1,10 @@
-import { useContext } from "react";
+import React, { useContext, PropsWithChildren } from "react";
 import { CursorContext } from "../../providers/CursorProvider";
 
-export const CursorLink = ({ href, children }) => {
+export const CursorLink = ({
+  href,
+  children,
+}: PropsWithChildren<{ href: string }>) => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (

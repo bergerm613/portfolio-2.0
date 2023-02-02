@@ -1,3 +1,4 @@
+import React from "react";
 import { useContext } from "react";
 
 import { CursorContext } from "../../../providers/CursorProvider";
@@ -71,7 +72,23 @@ export const ExperienceSection = () => {
   );
 };
 
-const Experience = ({ companyName, jobTitle, blurb, logo, link, years }) => {
+type ExperienceProps = {
+  companyName: string;
+  jobTitle: string;
+  blurb: string;
+  logo: any;
+  link: string;
+  years: string;
+};
+
+const Experience = ({
+  companyName,
+  jobTitle,
+  blurb,
+  logo,
+  link,
+  years,
+}: ExperienceProps) => {
   const { setCursorVariant } = useContext(CursorContext);
 
   return (

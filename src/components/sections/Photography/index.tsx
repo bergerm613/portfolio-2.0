@@ -1,3 +1,4 @@
+import React from "react";
 import ImageGallery from "react-image-gallery";
 
 import photo1 from "./photos/1.jpg";

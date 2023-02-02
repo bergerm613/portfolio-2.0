@@ -1,3 +1,5 @@
+import React from "react";
+
 import logo from "./assets/logo.png";
 
 import resumePDF from "./assets/resume.pdf";
